@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+}
+  
+body{
+  background-color: #131a22;
+  color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  overflow: hidden;
+  margin: 0;
+}
+  
+h1{
+  font-family: 'Oswald', sans-serif;
+  margin: 20px 0 0;
+}
+
+.juego-container{
+  position: relative;
+  margin: auto;
+  height: 350px;
+}
+  
+.figure-container{
+  fill: transparent;
+  stroke: lightgray;
+  stroke-width: 5px;
+  stroke-linecap: round;
+}
+  
+.container-error-letras span{
+  font-size: 24px;
+}
+  
+.palabra{
+  display: flex;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+  
+.letter{
+  border-bottom: 3px solid #224ca4;
+  display: inline-flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
+  height: 50px;
+  width: 20px;
+}
+  
+.mensaje{
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+  
+.muestraMensaje{
+  background-color: rgb(184, 8, 8);
+  border-radius: 5px;
+  box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+  
+.muestraMensaje button{
+  cursor: pointer;
+  background-color: lightgray;
+  color: red;
+  border: 0;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+  
+.notification-container{
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 0 0;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: -60px;
+  transition: transform 0.3s ease-in-out;
+}
+  
+.show{
+  transform: translateY(-60px);
+}
+  

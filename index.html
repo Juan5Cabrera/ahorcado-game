@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>AHORCADO</h1>
+    <p>Que inicie el juego. Pulsa una letra</p>
+    <div class="juego-container">
+      <svg height="250" width="200" class="figure-container">
+        <line x1="60" y1="20" x2="140" y2="20" />
+        <line x1="140" y1="20" x2="140" y2="50" />
+        <line x1="60" y1="20" x2="60" y2="230" />
+        <line x1="20" y1="230" x2="100" y2="230" />
+        <circle cx="140" cy="70" r="20" class="part" />
+        <line x1="140" y1="90" x2="140" y2="150" class="part" />
+        <line x1="140" y1="120" x2="120" y2="100" class="part" />
+        <line x1="140" y1="120" x2="160" y2="100" class="part" />
+        <line x1="140" y1="150" x2="120" y2="180" class="part" />
+        <line x1="140" y1="150" x2="160" y2="180" class="part" />
+      </svg>
+      
+      <div class="container-error-letras">
+        <div id="error-letras"></div>
+      </div>
+      <div class="palabra" id="palabra"></div>
+    </div>
+
+    <div class="mensaje" id="mensaje">
+      <div class="muestraMensaje">
+        <h2 id="final-mensaje"></h2>
+        <h3 id="palabra-final"></h3>
+        <button id="reset">Play Again</button>
+      </div>
+    </div>
+
+    <div class="notification-container" id="notification-container">
+      <p>Ya haz utilizado esta letra</p>
+    </div>
+  
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
